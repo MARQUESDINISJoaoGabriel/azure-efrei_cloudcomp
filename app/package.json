@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest --testPathPattern=tests/unit --forceExit",
-    "test:e2e": "jest --testPathPattern=tests/e2e --forceExit"
+    "test": "npx jest --testPathPattern=tests/unit --forceExit",
+    "test:e2e": "npx jest --testPathPattern=tests/e2e --forceExit"
   },
   "dependencies": {
     "express": "^4.18.2"

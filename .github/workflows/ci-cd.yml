@@ -23,8 +23,8 @@ jobs:
         run: npm install
 
       - name: Run unit tests
-        run: npm test
         working-directory: app
+        run: npx jest --testPathPattern=../tests/unit --forceExit
         env:
           NODE_ENV: test
 
@@ -46,8 +46,8 @@ jobs:
         run: npm install
 
       - name: Run E2E tests
-        run: npm run test:e2e
         working-directory: app
+        run: npx jest --testPathPattern=../tests/e2e --forceExit
         env:
           NODE_ENV: test
 
