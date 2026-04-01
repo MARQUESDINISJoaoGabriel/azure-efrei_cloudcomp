@@ -1,5 +1,5 @@
 const request = require('supertest');
-const { app, server } = require('../../app/index');
+const { app, server } = require('../../index');
 
 afterAll(() => server.close());
 
