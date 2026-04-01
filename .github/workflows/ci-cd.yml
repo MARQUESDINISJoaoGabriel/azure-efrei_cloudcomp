@@ -23,9 +23,7 @@ jobs:
           npm install -g jest
 
       - name: Run unit tests
-        run: |
-          cd app
-          jest --testPathPatterns=../tests/unit --forceExit
+        run: jest tests/unit --forceExit
         env:
           NODE_ENV: test
 
@@ -47,9 +45,7 @@ jobs:
           npm install -g jest
 
       - name: Run E2E tests
-        run: |
-          cd app
-          jest --testPathPatterns=../tests/e2e --forceExit
+        run: jest tests/e2e --forceExit
         env:
           NODE_ENV: test
 
